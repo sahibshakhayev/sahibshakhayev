@@ -15,7 +15,7 @@
    </tr>
 <tr>
   <td><img src="html.png" width="90"/></td>
-  <td><img src="css.png" width="90"/></td>
+  <td align="center"><img src="css.png" width="65"/></td>
   <td><img src="js.png" width="90"/></td>
   <td><img src="PHP.png" width="120" /></td>
   <td><img src="sql.png" width="130" /></td>
