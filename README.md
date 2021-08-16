@@ -1,26 +1,6 @@
- <!DOCTYPE html>
- <html lang="en-AZ">
- <head>
- <link rel="stylesheet" href="style.css" />
- </head>
-  <body>
-    
-  </body>
+## <p align="center">Hi, 👋 I’m  Sahib Shakhayev!</p>
   
-  
-  
-  
-  
- </html>
- 
- ## <p align="center">
-  
-  
-  
-  
-  Hi, 👋 I’m  Sahib Shakhayev!</p>
-  
-<p align="center"></p>
+<p align="center">So far, just a 👨‍🎓 student at the <a href="asoiu.edu.az"> 🏫 Azerbaijan State Oil and Industry University</a> specialty 🖥️ 👷‍♂️ Computer Engineering</p>
     
   
   
