@@ -17,16 +17,16 @@
   <td><img src="html.png" width="90"/></td>
   <td><img src="css.png" width="90"/></td>
   <td><img src="js.png" width="90"/></td>
-  <td><img src="PHP.png" width="120" height="100" /></td>
-  <td><img src="sql.png" width="130" height="100" /></td>
+  <td><img src="PHP.png" width="120" /></td>
+  <td><img src="sql.png" width="130" /></td>
  </tr>
    
    <tr>
      <td></td>
-     <td><img src="bootstrap.png" width="90" height="100" /></td>
-     <td><img src="jquery.png" width="90" height="100" /></td>
+     <td><img src="bootstrap.png" width="90" /></td>
+     <td><img src="jquery.png" width="90"  /></td>
      <td></td>
-     <td><img src="mysql.png" width="130" height="100" /></td>
+     <td><img src="mysql.png" width="130" /></td>
    
    </tr>
    
