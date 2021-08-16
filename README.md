@@ -14,9 +14,9 @@
    <td align="center">SQL</td>
    </tr>
 <tr>
-  <td><img src="html.png" width="90" height="100" /></td>
-  <td><img src="css.png" width="90" height="100" /></td>
-  <td><img src="js.png" width="90" height="100" /></td>
+  <td><img src="html.png" width="90"/></td>
+  <td><img src="css.png" width="90"/></td>
+  <td><img src="js.png" width="90"/></td>
   <td><img src="PHP.png" width="120" height="100" /></td>
   <td><img src="sql.png" width="130" height="100" /></td>
  </tr>
