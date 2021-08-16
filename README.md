@@ -41,8 +41,8 @@
    <td align="center">C++</td>
    </tr> 
    <tr>
-     <td><img src="c#.png" width="300"/></td>
-     <td><img src="c++.png" width="300"/></td>
+     <td><img src="c# .png" width="300"/></td>
+     <td><img src="c++.svg" width="90"/></td>
    
    </tr>  
      
