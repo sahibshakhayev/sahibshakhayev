@@ -39,8 +39,13 @@
  <tr>
    <td align="center">C#</td>  
    <td align="center">C++</td>
+   </tr> 
+   <tr>
+     <td><img src="c#.png" width="300"/></td>
+     <td><img src="c++.png" width="300"/></td>
    
-   <tr>  
+   </tr>  
+     
   </table>
   
   </div>
