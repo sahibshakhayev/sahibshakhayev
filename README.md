@@ -59,7 +59,7 @@
    <td align="center">Rasbian (Virtual)</td>
    </tr> 
    <tr>
-     <td><img src="windows-server.png" width="90"/></td>
+     <td><img src="windows-server.png" width="120"/></td>
      <td><img src="ubuntu.png" width="90"/></td>
      <td><img src="raspbian.png" width="90"/></td>
    </tr>  
