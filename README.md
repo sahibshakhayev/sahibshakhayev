@@ -15,9 +15,10 @@
   <td align="center"><a href="https://en.wikipedia.org/wiki/Azerbaijan"><img src="me/azerbaijan.png" width="120" /></a></td>
    <td align="center"><a href="https://en.wikipedia.org/wiki/Islam"><img src="me/islam.png" width="120" /></a></td>
    <td>
-  <ul>
- <li>A</li>  
-</ul>
+     <img src="me/azerbaijan.png" width="24"/> Azerbaijani (Native)<br>
+     <img src="me/russia.png" width="24"/> Russian (Study)<br>
+     <img src="me/turkey.png" width="24"/> Turkish (Like a native)<br>
+     <img src="me/uk.png" width="24"/> English (B2)
 </td>
   <td align="center"><a href="https://sahibshakhayev.me/age">Let's find out</a></td>
    <td align="center"></td>
