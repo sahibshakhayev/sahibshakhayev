@@ -108,6 +108,7 @@
      
   </table>
 </div>
-  
+<br>
+  <p align="center"> <img src=https://github-readme-stats.vercel.app/api?username=sahibshakhayev&show_icons=true&theme=tokyonight alt=sahibshakhayev /> </p>
   
 
