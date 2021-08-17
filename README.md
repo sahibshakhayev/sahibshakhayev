@@ -1,6 +1,24 @@
 # <p align="center">Hi, 👋 I’m  Sahib Shakhayev!</p>
   
 <p align="center">So far, just a 👨‍🎓 student at the <a href="http://asoiu.edu.az/en"> 🏫 Azerbaijan State Oil and Industry University</a> specialty 💻 👷‍♂️ Computer Engineering</p>
+
+
+<div align="center"> 
+<table>
+  <tr>
+  <td align="center">Country</td>
+   <td align="center">Religion</td>
+   <td align="center">Languages</td>
+   <td align="center">Age</td>
+   <td align="center">Worldview</td>
+  </tr>
+ 
+  </table
+
+
+
+</div>
+<p id="test"></p>
     
 ## <p align="center">What do i know?</p>
 ### <p align="center">Web</p>
