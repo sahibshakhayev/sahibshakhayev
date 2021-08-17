@@ -67,7 +67,7 @@
   </table>
   
   </div>
- ## <p align="center">Be My Friend</p>
+   <h2 align="center">Be My Friend)</h2>
   <div align="center"> 
  <table>
  <tr>
