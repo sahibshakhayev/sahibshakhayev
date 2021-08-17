@@ -12,7 +12,11 @@
    <td align="center">Age</td>
    <td align="center">Worldview</td>
   </tr>
- 
+  <td align="center"><a href="https://en.wikipedia.org/wiki/Azerbaijan"><img src="" /></a></td>
+   <td align="center"></td>
+   <td align="center"></td>
+  <td align="center"><a href="https://sahibshakhayev.me/age">Let's find out</a></td>
+   <td align="center"></td>
   </table
 
 
