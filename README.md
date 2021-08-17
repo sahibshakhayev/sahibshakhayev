@@ -84,7 +84,7 @@
      <td><img src="social/tiktok.png" width="90"/></td>
      <td><img src="social/vk.png" width="90"/></td>
      <td><img src="social/telegram.png" width="90"/></td>
-      <td><img src="social/wibty.png" width="120"/></td>
+      <td><img src="social/wibty.png" width="90"/></td>
    </tr>  
      
   </table>
