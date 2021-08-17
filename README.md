@@ -67,8 +67,27 @@
   </table>
   
   </div>
-
-
+ ## <p align="center">Be My Friend</p>
+  <div align="center"> 
+ <table>
+ <tr>
+   <td align="center">Facebook</td>  
+   <td align="center">Instagram</td>
+   <td align="center">TikTok</td>
+   <td align="center">VK</td>
+   <td align="center">Telegram</td>
+   <td align="center">Wibty</td>
+   </tr> 
+   <tr>
+     <td><img src="social/facebook.png" width="90"/></td>
+     <td><img src="social/instagram.png" width="90"/></td>
+     <td><img src="social/tiktok.png" width="90"/></td>
+     <td><img src="social/vk.png" width="90"/></td>
+     <td><img src="social/telegram.png" width="90"/></td>
+   </tr>  
+     
+  </table>
+</div>
   
   
 
