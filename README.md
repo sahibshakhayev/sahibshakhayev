@@ -12,9 +12,13 @@
    <td align="center">Age</td>
    <td align="center">Worldview</td>
   </tr>
-  <td align="center"><a href="https://en.wikipedia.org/wiki/Azerbaijan"><img src="" /></a></td>
-   <td align="center"></td>
-   <td align="center"></td>
+  <td align="center"><a href="https://en.wikipedia.org/wiki/Azerbaijan"><img src="me/azerbaijan.png" width="120" /></a></td>
+   <td align="center"><a href="https://en.wikipedia.org/wiki/Islam"><img src="me/islam.png" width="120" /></a></td>
+   <td>
+  <ul>
+ <li>A</li>  
+</ul>
+</td>
   <td align="center"><a href="https://sahibshakhayev.me/age">Let's find out</a></td>
    <td align="center"></td>
   </table
@@ -22,7 +26,7 @@
 
 
 </div>
-<p id="test"></p>
+
     
 ## <p align="center">What do i know?</p>
 ### <p align="center">Web</p>
