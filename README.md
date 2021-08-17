@@ -1,8 +1,9 @@
 # <p align="center">Hi, 👋 I’m  Sahib Shakhayev!</p>
   
 <p align="center">So far, just a 👨‍🎓 student at the <a href="http://asoiu.edu.az/en"> 🏫 Azerbaijan State Oil and Industry University</a> specialty 💻 👷‍♂️ Computer Engineering</p>
-
-
+<br>
+<br>
+<br>
 <div align="center"> 
 <table>
   <tr>
@@ -17,13 +18,14 @@
    <td>
      <img src="me/azerbaijan.png" width="24"/> Azerbaijani (Native)<br>
      <img src="me/russia.png" width="24"/> Russian (Study)<br>
-     <img src="me/turkey.png" width="24"/> Turkish (Like a native)<br>
+     <img src="me/turkey.png" width="24" height="13"/> Turkish (Like a native)<br>
      <img src="me/uk.png" width="24"/> English (B2)
 </td>
   <td align="center"><a href="https://sahibshakhayev.me/age">Let's find out</a></td>
    <td align="center">
      <a href="https://en.wikipedia.org/wiki/Humanism">Humanist</a><br>
-     <img src="me/azerbaijan.png" width="36"/>  <img src="me/armenia.png" width="36"/>
+     <br>
+     <img src="me/azerbaijan.png" width="36"/> <img src="me/peace.png"  height="22"  width="22" />  <img src="me/armenia.png" width="36"/>
   
   
   </td>
