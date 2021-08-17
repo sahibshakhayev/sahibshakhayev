@@ -23,7 +23,7 @@
   <td align="center"><a href="https://sahibshakhayev.me/age">Let's find out</a></td>
    <td align="center">
      <a href="https://en.wikipedia.org/wiki/Humanism">Humanist</a><br>
-    <img src="me/azerbaijan.png" width="24"/> ☮️ <img src="me/armenia.png" width="24"/>
+     <img src="me/azerbaijan.png" width="36"/>  <img src="me/armenia.png" width="36"/>
   
   
   </td>
