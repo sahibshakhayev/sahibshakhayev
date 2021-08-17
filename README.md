@@ -56,12 +56,12 @@
  <tr>
    <td align="center">Windows Server</td>  
    <td align="center">Ubuntu</td>
-   <td align="center">Rasbian (Virtual)</td>
+   <td align="center">Kali Linux</td>
    </tr> 
    <tr>
      <td><img src="windows-server.png" width="120"/></td>
      <td><img src="ubuntu.png" width="90"/></td>
-     <td><img src="raspbian.png" width="90"/></td>
+     <td><img src="kali-linux.png" width="90"/></td>
    </tr>  
      
   </table>
