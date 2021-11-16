@@ -118,10 +118,9 @@
      <td><a href="https://www.instagram.com/sahib.shakhayev"><img src="social/instagram.png" width="90"/></a></td>
      <td><a href="https://www.tiktok.com/@sahibshakhayev"><img src="social/tiktok.png" width="90"/></a></td>
      <td><a href="https://vk.com/sahibshakhayev"><img src="social/vk.png" width="90"/></a></td>
-     <td><a href="https://t.me/@SaHiB_SHaKHaYeV"><img src="social/telegram.png" width="90"/></a></td>
+     <td><a href="https://t.me/SaHiB_SHaKHaYeV"><img src="social/telegram.png" width="90"/></a></td>
       <td><img src="social/wibty.png" width="90"/></td>
    </tr>  
-     
   </table>
 </div>
 <br>
