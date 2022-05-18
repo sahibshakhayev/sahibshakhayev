@@ -25,7 +25,7 @@
    <td align="center">
      <a href="https://en.wikipedia.org/wiki/Humanism">Humanist</a><br>
      <br>
-     <img src="me/azerbaijan.png" width="36"/> <img src="me/peace.png"  height="22"  width="22" />  <img src="me/armenia.png" width="36"/>
+     <img src="me/peace.png"  height="22"  width="22" />
   
   
   </td>
