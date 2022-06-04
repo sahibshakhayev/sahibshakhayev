@@ -75,7 +75,7 @@
    <td align="center">C++</td>
    </tr> 
    <tr>
-     <td><a href="https://en.wikipedia.org/wiki/C#"><img src="c_sharp.png" width="90"/></a></td>
+     <td><a href="https://en.wikipedia.org/wiki/C-Sharp"><img src="c_sharp.png" width="90"/></a></td>
      <td><a href="https://en.wikipedia.org/wiki/C++"><img src="c++.svg" width="90"/></a></td>
    
    </tr>  
