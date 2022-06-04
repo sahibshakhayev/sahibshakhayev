@@ -52,15 +52,15 @@
   <td align="center"><a href="https://en.wikipedia.org/wiki/CSS"><img src="css.png" width="65"/></a></td>
   <td><a href="https://en.wikipedia.org/wiki/JavaScript"><img src="js.png" width="90"/></a></td>
   <td><a href="https://en.wikipedia.org/wiki/PHP"><img src="PHP.png" width="120" /></a></td>
-  <td><img src="sql.png" width="130" /><a href="https://en.wikipedia.org/wiki/SQL"></a></td>
+  <td><a href="https://en.wikipedia.org/wiki/SQL"><img src="sql.png" width="130" /></a></td>
  </tr>
    
    <tr>
      <td></td>
-     <td><img src="bootstrap.png" width="90" /></td>
-     <td><img src="jquery.png" width="90"  /></td>
+     <td><a href="https://en.wikipedia.org/wiki/Bootstrap"><img src="bootstrap.png" width="90" /></a></td>
+     <td><a href="https://en.wikipedia.org/wiki/jQuery"><img src="jquery.png" width="90"  /></a></td>
      <td></td>
-     <td><img src="mysql.png" width="130" /></td>
+     <td><a href="https://en.wikipedia.org/wiki/MySQL"><img src="mysql.png" width="130" /></a></td>
    
    </tr>
    
@@ -75,8 +75,8 @@
    <td align="center">C++</td>
    </tr> 
    <tr>
-     <td><img src="c_sharp.png" width="90"/></td>
-     <td><img src="c++.svg" width="90"/></td>
+     <td><a href="https://en.wikipedia.org/wiki/C#"><img src="c_sharp.png" width="90"/></a></td>
+     <td><a href="https://en.wikipedia.org/wiki/C++"><img src="c++.svg" width="90"/></a></td>
    
    </tr>  
      
@@ -93,9 +93,9 @@
    <td align="center">Kali Linux</td>
    </tr> 
    <tr>
-     <td><img src="windows-server.png" width="120"/></td>
-     <td><img src="ubuntu.png" width="90"/></td>
-     <td><img src="kali-linux.png" width="90"/></td>
+     <td><a href="https://en.wikipedia.org/wiki/Windows Server"><img src="windows-server.png" width="120"/></a></td>
+     <td><a href="https://en.wikipedia.org/wiki/Ubuntu"><img src="ubuntu.png" width="90"/></a></td>
+     <td><a href="https://en.wikipedia.org/wiki/Kali Linux"><img src="kali-linux.png" width="90"/></a></td>
    </tr>  
      
   </table>
