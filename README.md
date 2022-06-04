@@ -48,11 +48,11 @@
    <td align="center">SQL</td>
    </tr>
 <tr>
-  <td><img src="html.png" width="90"/></td>
-  <td align="center"><img src="css.png" width="65"/></td>
-  <td><img src="js.png" width="90"/></td>
-  <td><img src="PHP.png" width="120" /></td>
-  <td><img src="sql.png" width="130" /></td>
+  <td><a href="https://en.wikipedia.org/wiki/HTML"><img src="html.png" width="90"/></a></td>
+  <td align="center"><a href="https://en.wikipedia.org/wiki/CSS"><img src="css.png" width="65"/></a></td>
+  <td><a href="https://en.wikipedia.org/wiki/JavaScript"><img src="js.png" width="90"/></a></td>
+  <td><a href="https://en.wikipedia.org/wiki/PHP"><img src="PHP.png" width="120" /></a></td>
+  <td><img src="sql.png" width="130" /><a href="https://en.wikipedia.org/wiki/SQL"></a></td>
  </tr>
    
    <tr>
