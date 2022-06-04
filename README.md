@@ -21,7 +21,7 @@
      <img src="me/turkey.png" width="24" height="13"/> Turkish (Like a native)<br>
      <img src="me/uk.png" width="24"/> English (B2)
 </td>
-  <td align="center">20</td>
+  <td align="center">21</td>
    <td align="center">
      <a href="https://en.wikipedia.org/wiki/Humanism">Humanist</a><br>
      <br>
