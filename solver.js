@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Quiz Assistant (Gemini API)
+// @name         Quiz Assistant (Hugging Face)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Reads DOM questions, queries Gemini 3.1 Pro API, and overlays a modal
+// @version      1.2
+// @description  Reads questions and queries DeepSeek-V4 via Hugging Face Router
 // @match        *://*/*
 // @grant        none
 // ==/UserScript==
@@ -11,44 +11,44 @@
     'use strict';
 
     // --- 1. CONFIGURATION ---
-    const GEMINI_API_KEY = "AIzaSyC6QdC1rQhECO9rD8x-mIWl3VHSj2-fL4Q"; 
-    // UPDATE THIS: Find the CSS selector for the question text on your specific quiz site.
-    // Right-click the question -> Inspect Element -> find the class name (e.g., '.question-text')
+    const HF_TOKEN = "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"; 
+    const MODEL_ID = "deepseek-ai/DeepSeek-V4-Pro:novita";
+    // UPDATE THIS: Use the inspector to find the class/ID of the question text
     const QUESTION_SELECTOR = ".loaded"; 
 
     // --- 2. CREATE MODAL UI ---
     const modal = document.createElement('div');
-    modal.id = 'gemini-assistant-modal';
+    modal.id = 'hf-assistant-modal';
     Object.assign(modal.style, {
         position: 'fixed',
         top: '20px',
         right: '20px',
-        width: '400px',
+        width: '420px',
         maxHeight: '80vh',
         overflowY: 'auto',
-        backgroundColor: '#1e1e1e',
-        color: '#ffffff',
+        backgroundColor: '#0f172a', // Deep navy
+        color: '#f8fafc',
         padding: '20px',
-        borderRadius: '10px',
-        boxShadow: '0 8px 24px rgba(0,0,0,0.8)',
+        borderRadius: '12px',
+        boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.5)',
         zIndex: '999999',
-        display: 'none', // Hidden by default
-        fontFamily: 'system-ui, -apple-system, sans-serif',
-        fontSize: '15px',
+        display: 'none',
+        fontFamily: 'Inter, sans-serif',
+        fontSize: '14px',
         lineHeight: '1.6',
-        wordWrap: 'break-word'
+        border: '1px solid #334155'
     });
     
-    const title = document.createElement('h3');
-    title.innerText = '🧠 Gemini Assistant';
-    title.style.marginTop = '0';
-    title.style.borderBottom = '1px solid #444';
+    const title = document.createElement('div');
+    title.innerHTML = '<span style="color:#38bdf8">◈</span> <strong>DeepSeek Assistant</strong>';
+    title.style.marginBottom = '15px';
     title.style.paddingBottom = '10px';
+    title.style.borderBottom = '1px solid #334155';
     modal.appendChild(title);
 
     const contentDiv = document.createElement('div');
-    contentDiv.id = 'gemini-response-content';
-    contentDiv.innerText = 'Waiting for question to appear on screen...';
+    contentDiv.id = 'hf-response-content';
+    contentDiv.innerText = 'Waiting for question text...';
     modal.appendChild(contentDiv);
 
     document.body.appendChild(modal);
@@ -60,95 +60,76 @@
             e.preventDefault();
             modal.style.display = 'block';
         }
-        // Hide: Ctrl + H (Warning: Browsers may override this to open History)
+        // Hide: Ctrl + H
         if (e.ctrlKey && e.key.toLowerCase() === 'h') {
             e.preventDefault();
             modal.style.display = 'none';
         }
     });
 
-    // --- 4. API REQUEST LOGIC ---
-    async function queryGemini(questionText) {
-        contentDiv.innerText = '🤔 Thinking (High Level)...';
-        
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro-preview:streamGenerateContent?key=${GEMINI_API_KEY}`;
+    // --- 4. HUGGING FACE API LOGIC ---
+    async function queryHuggingFace(questionText) {
+        contentDiv.innerHTML = '<span style="color:#94a3b8">Analyzing question...</span>';
         
         const payload = {
-            contents: [{
-                role: "user",
-                parts: [{ text: `Please answer the following quiz question accurately:\n\n${questionText}` }]
-            }],
-            generationConfig: {
-                thinkingConfig: {
-                    thinkingLevel: "HIGH"
-                }
-            },
-            tools: [{
-                googleSearch: {}
-            }]
+            model: MODEL_ID,
+            messages: [
+                {
+                    role: "user",
+                    content: `Provide the correct answer for this quiz question. If it is multiple choice, state the correct option. Question: ${questionText}`,
+                },
+            ],
         };
 
         try {
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
+            const response = await fetch("https://router.huggingface.co/v1/chat/completions", {
+                headers: {
+                    "Authorization": `Bearer ${HF_TOKEN}`,
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
+                body: JSON.stringify(payload),
             });
 
             if (!response.ok) {
-                throw new Error(`API Error: ${response.status} ${response.statusText}`);
+                const errorText = await response.text();
+                throw new Error(`HF Error: ${response.status} - ${errorText}`);
             }
 
-            const data = await response.json();
+            const result = await response.json();
+            const answer = result.choices[0].message.content;
             
-            // `streamGenerateContent` typically returns an array of JSON chunks when called via standard HTTP POST
-            let fullText = "";
-            if (Array.isArray(data)) {
-                data.forEach(chunk => {
-                    if (chunk.candidates && chunk.candidates.length > 0) {
-                        const parts = chunk.candidates[0].content.parts;
-                        if (parts && parts.length > 0) {
-                            // Extract text, handling potential Markdown formatting
-                            fullText += parts.map(p => p.text).join("");
-                        }
-                    }
-                });
-            }
-            
-            contentDiv.innerHTML = fullText.replace(/\n/g, '<br>') || "No answer generated.";
+            contentDiv.innerHTML = `<strong>Result:</strong><br>${answer.replace(/\n/g, '<br>')}`;
         } catch (error) {
-            contentDiv.innerText = `Error: ${error.message}\nCheck network tab and API key.`;
+            contentDiv.innerHTML = `<span style="color:#ef4444;">Error: ${error.message}</span>`;
+            console.error("HF Router Error:", error);
         }
     }
 
-    // --- 5. DOM MUTATION OBSERVER (AUTO-DETECT CHANGES) ---
+    // --- 5. AUTOMATION LOGIC ---
     let lastProcessedQuestion = "";
 
     function checkForNewQuestion() {
         const questionElement = document.querySelector(QUESTION_SELECTOR);
         if (questionElement) {
             const currentQuestionText = questionElement.innerText.trim();
-            // If the text exists and is different from the last checked question
+            // Only trigger if text exists and it's different from the last one
             if (currentQuestionText && currentQuestionText !== lastProcessedQuestion) {
                 lastProcessedQuestion = currentQuestionText;
-                queryGemini(currentQuestionText);
+                queryHuggingFace(currentQuestionText);
             }
         }
     }
 
-    // Set up an observer to watch the entire page body for structural/text changes
-    const observer = new MutationObserver(() => {
-        checkForNewQuestion();
-    });
-
-    // Start observing
+    // Monitor for changes in the DOM (e.g., clicking "Next Question")
+    const observer = new MutationObserver(checkForNewQuestion);
     observer.observe(document.body, { 
         childList: true, 
         subtree: true, 
         characterData: true 
     });
 
-    // Run a manual check on initial script load just in case
-    setTimeout(checkForNewQuestion, 1500);
+    // Initial check on load
+    setTimeout(checkForNewQuestion, 2000);
 
 })();
